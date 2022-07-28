@@ -31,11 +31,11 @@ main{
     justify-content: space-between;
     position: relative;
 }
-#header .navbar nav{
+#header .navbar #nav{
     list-style-type: none;
     transition: .3s ease;
 }
-#header .navbar nav.active{
+#header .navbar #nav.active{
     display: flex;
     flex-direction: column;
     position:absolute;
@@ -49,7 +49,7 @@ main{
     transition: .3s ease;
 
 }
-#header .navbar nav.active::before{
+#header .navbar #nav.active::before{
     content: "";
     width:30px;
     margin: 0;
@@ -61,13 +61,13 @@ main{
     top:-29px;
     right:0;
 }
-#header .navbar nav.active li{
+#header .navbar #nav.active li{
     color:hsl(213, 9%, 39%);
     text-align: center;
     max-width:200px;
     margin:auto;
 }
-#header .navbar nav.active #contact{
+#header .navbar #nav.active #contact{
     background-color: hsl(51, 100%, 49%);
 }
 #header .navbar .bar{
@@ -76,14 +76,14 @@ main{
 #header .navbar .bar #bar{
     padding: 0;
 }
-#header .navbar nav li{
+#header .navbar #nav li{
     display: inline;
     padding: 16px 30px;
     color:hsl(0, 0%, 100%);
     font-weight: 600;
     cursor:pointer;
 }
-#header .navbar nav #contact{
+#header .navbar #nav #contact{
     background-color: hsl(0,0%,100%);
     color:#000;
     border-radius: 2rem;
@@ -92,7 +92,7 @@ main{
     font-weight: 600;
     transition: .2s ease;
 }
-#header .navbar nav #contact:hover{
+#header .navbar #nav #contact:hover{
     color:hsl(0, 0%, 100%);
     background-color: rgba(255, 255, 255, 0.301);
     cursor:pointer;
@@ -359,7 +359,7 @@ footer .social-links i{
 /* responsive for mobile max-width: 375px */
 @media (max-width:375px){
     
-    #header .navbar nav{
+    #header .navbar #nav{
         display: none;   
     }
     #header .navbar{
@@ -473,7 +473,7 @@ footer .social-links i{
 }
 @media (max-width:475px){
     
-    #header .navbar nav{
+    #header .navbar #nav{
         display: none;   
     }
     #header .navbar{
@@ -509,7 +509,6 @@ footer .social-links i{
     }
     .container .item{
         width: 100%;
-        background-color: pink;
         padding: 10px 1rem;
         text-align: center; 
         align-items: center;
